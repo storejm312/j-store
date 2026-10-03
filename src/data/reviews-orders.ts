@@ -1,0 +1,197 @@
+import type { Customer, Order, Review } from "@/types";
+
+export const reviews: Review[] = [
+  {
+    id: "r1",
+    productSlug: "iphone-16-pro-max",
+    author: "Grâce M.",
+    rating: 5,
+    date: "2026-09-18",
+    title: "Authentique, scellé, parfait",
+    body: "Téléphone scellé vérifié devant moi en boutique. Prix en dollars respecté, garantie écrite remise. Je recommande.",
+  },
+  {
+    id: "r2",
+    productSlug: "iphone-16-pro-max",
+    author: "Jonathan K.",
+    rating: 5,
+    date: "2026-09-10",
+    title: "Livré le jour même",
+    body: "Commandé le matin sur WhatsApp, reçu l'après-midi à Gombe. Configuration et transfert de données offerts.",
+  },
+  {
+    id: "r3",
+    productSlug: "tecno-camon-50-pro",
+    author: "Divine N.",
+    rating: 5,
+    date: "2026-08-30",
+    title: "Excellent rapport qualité-prix",
+    body: "Photos superbes même le soir. L'équipe a tout configuré : WhatsApp, mobile money, verre trempé posé gratuitement.",
+  },
+  {
+    id: "r4",
+    productSlug: "iphone-13",
+    author: "Patrick L.",
+    rating: 4,
+    date: "2026-08-12",
+    title: "Très bon, notice en anglais",
+    body: "Téléphone impeccable et garantie d'un an. Seul bémol : la notice est en anglais, mais l'équipe m'a tout expliqué.",
+  },
+  {
+    id: "r5",
+    productSlug: "xiaomi-redmi-note-14-pro",
+    author: "Sarah B.",
+    rating: 5,
+    date: "2026-08-02",
+    title: "200 Mpx impressionnants",
+    body: "La photo est incroyable pour ce prix. Paiement mobile money accepté, facture reçue. Très professionnel.",
+  },
+  {
+    id: "r6",
+    productSlug: "infinix-note-50-pro-plus-5g",
+    author: "Moïse T.",
+    rating: 5,
+    date: "2026-08-25",
+    title: "Charge ultra rapide",
+    body: "De 0 à 100 % en moins de 30 minutes, c'est réel. Boutique sérieuse, on m'a montré comment vérifier l'authenticité.",
+  },
+  {
+    id: "r7",
+    productSlug: "galaxy-a56",
+    author: "Esther W.",
+    rating: 4,
+    date: "2026-07-19",
+    title: "Bon téléphone, SAV réactif",
+    body: "Petit souci de coque à l'achat, échangée sans discussion le lendemain. Service client au top sur WhatsApp.",
+  },
+  {
+    id: "r8",
+    productSlug: "airpods-max",
+    author: "Chris D.",
+    rating: 5,
+    date: "2026-07-05",
+    title: "Son exceptionnel",
+    body: "Réduction de bruit bluffante dans le taxi et au bureau. Produit original Apple vérifié sur place.",
+  },
+  {
+    id: "r9",
+    productSlug: "tecno-spark-30",
+    author: "Junior A.",
+    rating: 4,
+    date: "2026-09-01",
+    title: "Parfait pour son prix",
+    body: "Écran fluide, batterie qui tient deux jours. Pour moins de 150 $, difficile de faire mieux.",
+  },
+  {
+    id: "r10",
+    productSlug: "iphone-11",
+    author: "Maman Bijou",
+    rating: 5,
+    date: "2026-06-14",
+    title: "Idéal pour débuter",
+    body: "Acheté pour ma fille étudiante. L'équipe a tout installé et expliqué patiemment. Merci JM Store !",
+  },
+];
+
+export function reviewsFor(slug: string): Review[] {
+  const direct = reviews.filter((r) => r.productSlug === slug);
+  if (direct.length > 0) return direct;
+  return reviews.slice(0, 3);
+}
+
+export const customers: Customer[] = [
+  { id: "c1", name: "Grâce Mbuyi", phone: "+243 810 000 001", whatsapp: "243810000001", email: "grace.m@example.cd", city: "Gombe", ordersCount: 3, totalSpentUSD: 2247 },
+  { id: "c2", name: "Jonathan Kabila", phone: "+243 820 000 002", whatsapp: "243820000002", email: "jonathan.k@example.cd", city: "Ngaliema", ordersCount: 2, totalSpentUSD: 1398 },
+  { id: "c3", name: "Divine Nsimba", phone: "+243 830 000 003", whatsapp: "243830000003", email: "divine.n@example.cd", city: "Lemba", ordersCount: 4, totalSpentUSD: 986 },
+  { id: "c4", name: "Patrick Lumbu", phone: "+243 840 000 004", whatsapp: "243840000004", email: "patrick.l@example.cd", city: "Bandal", ordersCount: 1, totalSpentUSD: 549 },
+  { id: "c5", name: "Sarah Bilonda", phone: "+243 850 000 005", whatsapp: "243850000005", email: "sarah.b@example.cd", city: "Kalamu", ordersCount: 2, totalSpentUSD: 628 },
+  { id: "c6", name: "Moïse Tshisekedi", phone: "+243 860 000 006", whatsapp: "243860000006", email: "moise.t@example.cd", city: "Mont Ngafula", ordersCount: 5, totalSpentUSD: 1124 },
+];
+
+export const orders: Order[] = [
+  {
+    id: "DEMO-1042",
+    customer: { name: "Grâce Mbuyi", phone: "+243 810 000 001", city: "Gombe" },
+    date: "2026-10-02",
+    items: [{ productSlug: "iphone-16-pro-max", productName: "iPhone 16 Pro Max", variantLabel: "Noir · 256 GB", qty: 1, unitPriceUSD: 1199, image: "/images/iPhone/iPhone-16-Pro-Max-768x768.webp" }],
+    totalUSD: 1199,
+    deliveryMode: "Livraison à domicile",
+    paymentMode: "Mobile Money",
+    status: "Nouvelle",
+  },
+  {
+    id: "DEMO-1041",
+    customer: { name: "Jonathan Kabila", phone: "+243 820 000 002", city: "Ngaliema" },
+    date: "2026-10-01",
+    items: [
+      { productSlug: "galaxy-a56", productName: "Samsung Galaxy A56", variantLabel: "Noir · 128 GB · 8 GB", qty: 1, unitPriceUSD: 399, image: "" },
+      { productSlug: "adaptateur-usbc-30w", productName: "Adaptateur USB-C 30W", variantLabel: "Blanc", qty: 1, unitPriceUSD: 25, image: "/images/iPhone/Accessoires/Adaptateur-USB-C-30W.webp" },
+    ],
+    totalUSD: 424,
+    deliveryMode: "Retrait boutique",
+    paymentMode: "Paiement boutique",
+    status: "Confirmée",
+  },
+  {
+    id: "DEMO-1040",
+    customer: { name: "Divine Nsimba", phone: "+243 830 000 003", city: "Lemba" },
+    date: "2026-09-30",
+    items: [{ productSlug: "tecno-camon-50-pro", productName: "Tecno Camon 50 Pro", variantLabel: "Vert · 256 GB · 8 GB", qty: 1, unitPriceUSD: 299, image: "/images/TECNO/Camon/Tecno-CAMON-50-Pro.webp" }],
+    totalUSD: 299,
+    deliveryMode: "Livraison à domicile",
+    paymentMode: "Cash",
+    status: "Préparation",
+  },
+  {
+    id: "DEMO-1039",
+    customer: { name: "Moïse Tshisekedi", phone: "+243 860 000 006", city: "Mont Ngafula" },
+    date: "2026-09-28",
+    items: [
+      { productSlug: "infinix-hot-60-pro", productName: "Infinix Hot 60 Pro", variantLabel: "Orange · 256 GB · 8 GB", qty: 2, unitPriceUSD: 199, image: "/images/TECNO/Infinix/infinix-hot-60-pro.webp" },
+    ],
+    totalUSD: 398,
+    deliveryMode: "Livraison à domicile",
+    paymentMode: "Mobile Money",
+    status: "Expédiée",
+  },
+  {
+    id: "DEMO-1038",
+    customer: { name: "Sarah Bilonda", phone: "+243 850 000 005", city: "Kalamu" },
+    date: "2026-09-25",
+    items: [{ productSlug: "xiaomi-redmi-note-14-pro", productName: "Xiaomi Redmi Note 14 Pro", variantLabel: "Bleu · 256 GB · 8 GB", qty: 1, unitPriceUSD: 299, image: "" }],
+    totalUSD: 299,
+    deliveryMode: "Retrait boutique",
+    paymentMode: "Paiement boutique",
+    status: "Livrée",
+  },
+  {
+    id: "DEMO-1037",
+    customer: { name: "Patrick Lumbu", phone: "+243 840 000 004", city: "Bandal" },
+    date: "2026-09-22",
+    items: [{ productSlug: "iphone-13", productName: "iPhone 13", variantLabel: "Noir · 128 GB", qty: 1, unitPriceUSD: 549, image: "/images/iPhone/iphone-13-black-300x300.webp" }],
+    totalUSD: 549,
+    deliveryMode: "Livraison à domicile",
+    paymentMode: "Cash",
+    status: "Livrée",
+  },
+  {
+    id: "DEMO-1036",
+    customer: { name: "Divine Nsimba", phone: "+243 830 000 003", city: "Lemba" },
+    date: "2026-09-18",
+    items: [{ productSlug: "ecouteurs-buds-air", productName: "Écouteurs Buds Air", variantLabel: "Blanc", qty: 1, unitPriceUSD: 29, image: "" }],
+    totalUSD: 29,
+    deliveryMode: "Retrait boutique",
+    paymentMode: "Cash",
+    status: "Annulée",
+  },
+];
+
+export const demoUser = {
+  name: "Grâce Mbuyi",
+  phone: "+243 810 000 001",
+  whatsapp: "243810000001",
+  email: "grace.m@example.cd",
+  city: "Gombe, Kinshasa",
+  address: "Av. de la Nation n°12, Gombe",
+  memberSince: "2025-06-14",
+};
