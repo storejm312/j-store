@@ -7,6 +7,7 @@ import { whatsappContactLink } from "@/lib/whatsapp";
 import { useCart } from "@/stores/cart";
 import { useWishlist } from "@/stores/wishlist";
 import { SearchOverlay } from "./SearchOverlay";
+import { SiteLogo } from "./SiteLogo";
 
 const NAV = [
   { label: "Shop", href: "/shop" },
@@ -66,8 +67,8 @@ export function Header() {
           >
             <span aria-hidden="true" className="text-xl">☰</span>
           </button>
-          <Link href="/" className="flex items-baseline gap-1.5" aria-label="JM Store — accueil">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-ink-950 text-sm font-bold text-white">JM</span>
+          <Link href="/" className="flex items-center gap-2" aria-label="JM Store — accueil">
+            <SiteLogo size={40} priority />
             <span className="text-lg font-semibold tracking-tight">Store</span>
           </Link>
           <nav className="hidden items-center gap-5 md:flex" aria-label="Navigation principale">

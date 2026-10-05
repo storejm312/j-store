@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiteLogo } from "@/components/SiteLogo";
 
 const NAV = [
   { label: "Dashboard", href: "/admin" },
@@ -16,8 +17,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-6 md:flex-row md:px-6">
         <aside className="shrink-0 md:w-56" aria-label="Navigation admin">
           <div className="flex items-center justify-between md:block">
-            <Link href="/" className="flex items-center gap-1.5" aria-label="Retour au site">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-ink-950 text-sm font-bold text-white">JM</span>
+            <Link href="/" className="flex items-center gap-2" aria-label="Retour au site">
+              <SiteLogo size={36} />
               <span className="font-semibold">Admin</span>
             </Link>
             <Link href="/" className="text-sm font-medium underline md:mt-1 md:block">← Voir le site</Link>

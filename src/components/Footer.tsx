@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { whatsappContactLink } from "@/lib/whatsapp";
+import { SiteLogo } from "./SiteLogo";
 
 const COLS = [
   {
@@ -39,8 +40,8 @@ export function Footer() {
     <footer className="mt-20 border-t border-ink-100 bg-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-[1.2fr_1fr_1fr_1fr] md:px-6">
         <div>
-          <p className="flex items-center gap-1.5">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-ink-950 text-sm font-bold text-white">JM</span>
+          <p className="flex items-center gap-2">
+            <SiteLogo size={44} />
             <span className="text-lg font-semibold tracking-tight">Store</span>
           </p>
           <p className="mt-3 max-w-xs text-sm text-ink-500">{siteConfig.tagline} {siteConfig.description}</p>

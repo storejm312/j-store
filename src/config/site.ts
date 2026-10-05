@@ -4,6 +4,7 @@
 
 export const siteConfig = {
   name: "JM Store",
+  logo: "/logo-jm-store.png",
   tagline: "Technology, beautifully chosen.",
   description:
     "Smartphones, tablettes, montres connectées et accessoires premium à Kinshasa. Produits authentiques, garantie, livraison rapide.",
