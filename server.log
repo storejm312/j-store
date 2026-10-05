@@ -1,0 +1,8 @@
+   ▲ Next.js 15.5.4
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.198.112:3000
+
+ ✓ Starting...
+ ⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\E:\DOCUMENT\business\OPTIMUS\premier contrat\JM STORE\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\E:\DOCUMENT\business\OPTIMUS\premier contrat\JM STORE\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+ ✓ Ready in 2.4s
