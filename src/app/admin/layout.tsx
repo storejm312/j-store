@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { AdminGuard, AdminLogout } from "@/components/AdminGuard";
 import { SiteLogo } from "@/components/SiteLogo";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Administration",
+    template: "%s · Admin JM Store",
+  },
+};
 
 const NAV = [
   { label: "Dashboard", href: "/admin" },
@@ -12,7 +21,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   return (
     <div className="min-h-screen bg-ink-50">
       <div className="bg-ink-950 py-2 text-center text-xs font-semibold uppercase tracking-widest text-amber-300">
-        Admin démo — sans authentification réelle
+        Espace d&apos;administration JM Store
       </div>
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-6 md:flex-row md:px-6">
         <aside className="shrink-0 md:w-56" aria-label="Navigation admin">
@@ -29,9 +38,12 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 {n.label}
               </Link>
             ))}
+            <AdminLogout />
           </nav>
         </aside>
-        <div className="min-w-0 flex-1">{children}</div>
+        <div className="min-w-0 flex-1">
+          <AdminGuard>{children}</AdminGuard>
+        </div>
       </div>
     </div>
   );

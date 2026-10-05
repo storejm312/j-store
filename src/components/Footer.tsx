@@ -67,9 +67,17 @@ export function Footer() {
         ))}
       </div>
       <div className="border-t border-ink-100">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-ink-500 sm:flex-row md:px-6">
-          <p>© 2026 {siteConfig.name} — Maquette de démonstration, données simulées.</p>
-          <p>Prix en USD · équivalent FC indicatif.</p>
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-ink-500 sm:flex-row md:px-6">
+          <p>© 2026 {siteConfig.name} — Proposé par OPTIMUS SARL.</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <p>Prix en USD · équivalent FC indicatif.</p>
+            <Link
+              href="/admin/login"
+              className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 px-4 py-2 text-xs font-semibold text-ink-950 hover:border-ink-950"
+            >
+              <span aria-hidden="true">🔒</span> Connexion admin
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
