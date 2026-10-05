@@ -7,12 +7,12 @@ export const siteConfig = {
   logo: "/logo-jm-store.png",
   tagline: "Technology, beautifully chosen.",
   description:
-    "Smartphones, tablettes, montres connectées et accessoires premium à Kinshasa. Produits authentiques, garantie, livraison rapide.",
+    "Smartphones, tablettes, montres connectées et accessoires premium à Kolwezi. Produits authentiques, garantie, livraison rapide.",
   whatsappNumber: "243992057204", // +243 992 057 204 — format international sans "+"
   whatsappDisplay: "+243 992 057 204",
   phone: "+243 992 057 204",
   email: "contact@jmstore.cd",
-  address: "Boulevard du 30 Juin, Kinshasa, RDC",
+  address: "Kolwezi, Lualaba, RDC",
   hours: "Lun – Sam · 9h00 – 19h00",
   currency: {
     main: "USD" as const,

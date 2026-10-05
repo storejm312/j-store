@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!p) return { title: "Produit introuvable" };
   return {
     title: p.name,
-    description: `${p.tagline} Garantie incluse, livraison à Kinshasa.`,
+    description: `${p.tagline} Garantie incluse, livraison à Kolwezi.`,
     openGraph: {
       title: `${p.name} · JM Store`,
       description: p.tagline,

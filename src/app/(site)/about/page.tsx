@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "À propos",
-  description: "JM Store : notre histoire, notre vision et nos engagements à Kinshasa.",
+  description: "JM Store : notre histoire, notre vision et nos engagements à Kolwezi.",
 };
 
 const VALUES = [
   { title: "Authenticité", text: "Chaque produit est vérifié : IMEI, numéro de série, scellé d'origine. Aucune copie, aucune surprise." },
   { title: "Garantie écrite", text: "12 mois sur le neuf, 6 mois sur le reconditionné. Le SAV est assuré dans notre boutique, pas à l'autre bout du monde." },
   { title: "Service client", text: "Conseil honnête, configuration offerte, support WhatsApp 6 j/7. Nous répondons en quelques minutes." },
-  { title: "Livraison soignée", text: "Kinshasa en 24 h, provinces en 48–72 h. Produit testé et emballé avant chaque départ." },
+  { title: "Livraison soignée", text: "Kolwezi en 24 h, provinces en 48–72 h. Produit testé et emballé avant chaque départ." },
 ];
 
 export default function AboutPage() {
@@ -25,7 +25,7 @@ export default function AboutPage() {
       <section className="mt-8 rounded-3xl border border-ink-100 bg-white p-6 md:p-10" aria-label="Notre histoire">
         <h2 className="text-xl font-semibold">Notre histoire</h2>
         <p className="mt-3 text-ink-700">
-          JM Store est née à Kinshasa d&apos;un constat simple : acheter un smartphone devrait être simple et rassurant.
+          JM Store est née à Kolwezi d&apos;un constat simple : acheter un smartphone devrait être simple et rassurant.
           Nous avons ouvert notre showroom sur le Boulevard du 30 Juin pour offrir ce qui manquait : des produits
           100 % authentiques, des prix affichés en dollars sans surprise, et une équipe qui configure votre téléphone
           devant vous.

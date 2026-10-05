@@ -113,7 +113,7 @@ export const productsApple: Product[] = [
     category: "smartphones",
     tagline: "Le summum d'Apple. Titane, A18 Pro, 48 Mpx.",
     description:
-      "L'iPhone 16 Pro Max repousse toutes les limites : châssis en titane, puce A18 Pro, nouveau bouton Contrôle de l'appareil photo et la meilleure autonomie jamais vue sur iPhone. Disponible à Kinshasa avec garantie JM Store.",
+      "L'iPhone 16 Pro Max repousse toutes les limites : châssis en titane, puce A18 Pro, nouveau bouton Contrôle de l'appareil photo et la meilleure autonomie jamais vue sur iPhone. Disponible à Kolwezi avec garantie JM Store.",
     specs: phoneSpecs({
       screen: '6,9" OLED Super Retina XDR 120 Hz',
       chip: "Apple A18 Pro",

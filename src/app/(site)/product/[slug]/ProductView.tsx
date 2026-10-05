@@ -17,9 +17,9 @@ import { ProductImage, Stars } from "@/components/ProductImage";
 
 const FAQ = [
   { q: "Le produit est-il authentique ?", a: "Oui. Chaque produit est vérifié (IMEI / numéro de série) devant vous en boutique ou avant expédition. Scellé d'origine pour le neuf." },
-  { q: "Quelle garantie est incluse ?", a: "12 mois pour le neuf, 6 mois pour le reconditionné. La garantie couvre les défauts matériels (hors casse et oxydation). SAV assuré à Kinshasa." },
+  { q: "Quelle garantie est incluse ?", a: "12 mois pour le neuf, 6 mois pour le reconditionné. La garantie couvre les défauts matériels (hors casse et oxydation). SAV assuré à Kolwezi." },
   { q: "Quels moyens de paiement acceptez-vous ?", a: "Cash à la livraison, Mobile Money (M-Pesa, Airtel Money, Orange Money) et paiement en boutique." },
-  { q: "Livrez-vous hors Kinshasa ?", a: "Oui, nous expédions dans toutes les provinces sous 48 à 72 h avec suivi WhatsApp." },
+  { q: "Livrez-vous hors Kolwezi ?", a: "Oui, nous expédions dans toutes les provinces sous 48 à 72 h avec suivi WhatsApp." },
 ];
 
 export function ProductView({ product }: { product: Product }) {
@@ -212,7 +212,7 @@ export function ProductView({ product }: { product: Product }) {
           <ul className="mt-6 grid gap-2 text-sm sm:grid-cols-3">
             {[
               ["✓ Garantie", product.condition === "Neuf" ? "12 mois incluse" : "6 mois incluse"],
-              ["◷ Livraison", "Kinshasa 24 h"],
+              ["◷ Livraison", "Kolwezi 24 h"],
               ["⇄ Retours", "7 jours boutique"],
             ].map(([t, d]) => (
               <li key={t} className="rounded-2xl border border-ink-100 bg-white p-3">

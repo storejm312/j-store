@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 const SERVICES = [
-  { title: "Livraison rapide", text: "Kinshasa le jour même, provinces 48–72 h.", icon: "◷" },
+  { title: "Livraison rapide", text: "Kolwezi le jour même, provinces 48–72 h.", icon: "◷" },
   { title: "Garantie 12 mois", text: "Produits authentiques, garantie écrite.", icon: "✓" },
   { title: "Configuration offerte", text: "Transfert de données et mise en route.", icon: "⚙" },
   { title: "Reprise", text: "Votre ancien téléphone estimé et repris.", icon: "⇄" },
@@ -43,7 +43,7 @@ export default function HomePage() {
               Technology, beautifully chosen.
             </h1>
             <p className="mt-4 max-w-md text-ink-500">
-              iPhone, Galaxy, Tecno, Infinix et accessoires — 100 % authentiques, garantis et configurés à Kinshasa.
+              iPhone, Galaxy, Tecno, Infinix et accessoires — 100 % authentiques, garantis et configurés à Kolwezi.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/shop" className="rounded-full bg-ink-950 px-7 py-3 text-sm font-medium text-white hover:bg-ink-700">
@@ -57,7 +57,7 @@ export default function HomePage() {
               {[
                 ["49+", "Produits en stock"],
                 ["12 mois", "De garantie"],
-                ["24 h", "Livraison Kinshasa"],
+                ["24 h", "Livraison Kolwezi"],
               ].map(([v, l]) => (
                 <div key={l}>
                   <dt className="text-lg font-semibold">{v}</dt>
@@ -164,7 +164,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-6 md:px-6" aria-label="Notre boutique">
         <div className="grid items-center gap-6 rounded-3xl border border-ink-100 bg-white p-6 md:grid-cols-2 md:p-10">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ink-400">Showroom Kinshasa</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ink-400">Showroom Kolwezi</p>
             <h2 className="mt-2 text-3xl font-semibold tracking-tight">Venez nous rendre visite.</h2>
             <p className="mt-2 text-ink-500">Essayez les téléphones, vérifiez l&apos;authenticité sur place, repartez configuré.</p>
             <p className="mt-4 text-sm font-medium">{siteConfig.address}</p>
@@ -177,7 +177,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-ink-100">
-            <Image src="/images/HERO.jpg" alt="Devanture JM Store à Kinshasa" fill loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+            <Image src="/images/HERO.jpg" alt="Devanture JM Store à Kolwezi" fill loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ import { useCart } from "@/stores/cart";
 import { ProductImage } from "@/components/ProductImage";
 
 const DELIVERY = [
-  { value: "Livraison à domicile", hint: "Kinshasa 24 h · +10 $ offerts dès 500 $" },
+  { value: "Livraison à domicile", hint: "Kolwezi 24 h · +10 $ offerts dès 500 $" },
   { value: "Retrait boutique", hint: "Boulevard du 30 Juin · Lun–Sam 9h–19h" },
 ];
 
@@ -26,7 +26,7 @@ export default function CheckoutPage() {
     phone: "",
     whatsapp: "",
     email: "",
-    city: "Kinshasa",
+    city: "Kolwezi",
     commune: "",
     address: "",
     notes: "",
@@ -152,7 +152,7 @@ export default function CheckoutPage() {
               </div>
               <div>
                 <label htmlFor="co-commune" className="mb-1 block text-sm font-medium">Commune</label>
-                <input id="co-commune" value={form.commune} onChange={(e) => set("commune", e.target.value)} placeholder="Gombe, Lemba…" className={inputCls} />
+                <input id="co-commune" value={form.commune} onChange={(e) => set("commune", e.target.value)} placeholder="Dilala, Manika…" className={inputCls} />
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="co-address" className="mb-1 block text-sm font-medium">Adresse *</label>

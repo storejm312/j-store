@@ -46,7 +46,7 @@ export function Header() {
     <>
       <div className="bg-ink-950 text-center text-[12px] font-medium text-white">
         <p className="mx-auto max-w-6xl px-4 py-2">
-          Livraison offerte à Kinshasa dès 500 $ · Garantie 12 mois ·{" "}
+          Livraison offerte à Kolwezi dès 500 $ · Garantie 12 mois ·{" "}
           <a href={whatsappContactLink()} target="_blank" rel="noreferrer" className="underline underline-offset-2">
             WhatsApp {siteConfig.whatsappDisplay}
           </a>

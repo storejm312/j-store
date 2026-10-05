@@ -191,7 +191,7 @@ export const demoUser = {
   phone: "+243 810 000 001",
   whatsapp: "243810000001",
   email: "grace.m@example.cd",
-  city: "Gombe, Kinshasa",
-  address: "Av. de la Nation n°12, Gombe",
+  city: "Kolwezi",
+  address: "Kolwezi, Lualaba, RDC",
   memberSince: "2025-06-14",
 };

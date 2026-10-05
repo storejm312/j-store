@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const SERVICES = [
-  { title: "Livraison", text: "Kinshasa en 24 h (offerte dès 500 $), provinces en 48–72 h avec suivi WhatsApp. Chaque colis est vérifié avant départ.", icon: "◷" },
+  { title: "Livraison", text: "Kolwezi en 24 h (offerte dès 500 $), provinces en 48–72 h avec suivi WhatsApp. Chaque colis est vérifié avant départ.", icon: "◷" },
   { title: "Garantie", text: "12 mois sur le neuf, 6 mois sur le reconditionné. Garantie écrite remise à chaque achat, SAV assuré sur place.", icon: "✓" },
   { title: "Configuration offerte", text: "Mise en route, comptes, WhatsApp, mobile money et transfert complet de vos données depuis l'ancien téléphone.", icon: "⚙" },
   { title: "Transfert de données", text: "Photos, contacts, messages et applications migrés sans perte, iPhone comme Android.", icon: "⇄" },

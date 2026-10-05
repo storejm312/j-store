@@ -23,14 +23,8 @@ export default function AdminLoginPage() {
       }
       router.push("/admin");
     } else {
-      setError("Identifiants incorrects. Utilisez le compte démo ci-dessous.");
+      setError("Identifiants incorrects. Veuillez réessayer.");
     }
-  };
-
-  const fillDemo = () => {
-    setEmail(DEMO_ADMIN.email);
-    setPassword(DEMO_ADMIN.password);
-    setError("");
   };
 
   return (
@@ -54,15 +48,8 @@ export default function AdminLoginPage() {
         <button type="submit" className="mt-4 w-full rounded-full bg-ink-950 py-3.5 text-sm font-medium text-white hover:bg-ink-700">
           Se connecter
         </button>
-        <button type="button" onClick={fillDemo} className="mt-2 w-full rounded-full border border-ink-200 py-3 text-sm font-medium">
-          Remplir le compte démo
-        </button>
       </form>
 
-      <div className="mt-3 rounded-2xl bg-ink-100 p-4 text-center text-xs text-ink-700">
-        <p className="font-semibold">Compte de démonstration</p>
-        <p className="mt-1 font-mono">{DEMO_ADMIN.email} · {DEMO_ADMIN.password}</p>
-      </div>
       <Link href="/" className="mt-4 text-center text-sm font-medium underline underline-offset-4">
         ← Retour au site
       </Link>

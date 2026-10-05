@@ -6,7 +6,7 @@ import { whatsappContactLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "Notre boutique",
-  description: "JM Store à Kinshasa : adresse, horaires, téléphone et WhatsApp. Venez nous rendre visite.",
+  description: "JM Store à Kolwezi : adresse, horaires, téléphone et WhatsApp. Venez nous rendre visite.",
 };
 
 const HOURS = [
@@ -21,7 +21,7 @@ export default function StorePage() {
       <nav aria-label="Fil d'Ariane" className="mb-3 text-sm text-ink-500">
         <Link href="/" className="hover:underline">Accueil</Link> / <span aria-current="page" className="font-medium text-ink-950">Boutique</span>
       </nav>
-      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ink-400">Showroom Kinshasa</p>
+      <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ink-400">Showroom Kolwezi</p>
       <h1 className="mt-1 text-3xl font-semibold tracking-tight md:text-4xl">Venez nous rendre visite.</h1>
       <p className="mb-6 mt-2 max-w-2xl text-ink-500">
         Essayez les téléphones en main, vérifiez l&apos;authenticité sur place et repartez avec un appareil configuré.

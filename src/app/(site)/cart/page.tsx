@@ -74,7 +74,7 @@ export default function CartPage() {
               <dd className="font-medium">{formatUSD(subtotalUSD)}</dd>
             </div>
             <div className="flex justify-between">
-              <dt className="text-ink-500">Livraison Kinshasa</dt>
+              <dt className="text-ink-500">Livraison Kolwezi</dt>
               <dd className="font-medium">{deliveryUSD === 0 ? "Offerte" : formatUSD(deliveryUSD)}</dd>
             </div>
             {deliveryUSD > 0 && (
