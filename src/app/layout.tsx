@@ -4,7 +4,10 @@ import { siteConfig } from "@/config/site";
 import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jmstore.cd"),
+  // Sur Vercel, VERCEL_URL est fourni automatiquement ; sinon domaine de production.
+  metadataBase: new URL(
+    process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://jmstore.cd"
+  ),
   title: {
     default: `${siteConfig.name} — ${siteConfig.tagline}`,
     template: `%s · ${siteConfig.name}`,
